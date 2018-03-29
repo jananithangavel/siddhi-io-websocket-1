@@ -128,7 +128,7 @@ public class WebSocketSink extends Sink {
     public String[] getSupportedDynamicOptions() {
         return SUPPORTED_DYNAMIC_OPTIONS;
     }
-
+                
     @Override
     protected void init(StreamDefinition streamDefinition, OptionHolder optionHolder,
                         ConfigReader configReader, SiddhiAppContext siddhiAppContext) {
