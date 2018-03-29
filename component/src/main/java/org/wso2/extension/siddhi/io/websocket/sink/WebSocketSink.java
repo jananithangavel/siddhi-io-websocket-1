@@ -140,6 +140,12 @@ public class WebSocketSink extends Sink {
                 (WebSocketProperties.HEADERS, null);
         this.idleTimeoutString = optionHolder.validateAndGetStaticValue
                 (WebSocketProperties.IDLE_TIMEOUT, null);
+
+        this.headers = optionHolder.validateAndGetStaticValue
+                (WebSocketProperties.HEADERS, null);
+        this.idleTimeoutString = optionHolder.validateAndGetStaticValue
+                (WebSocketProperties.IDLE_TIMEOUT, null);
+
         if (idleTimeoutString != null) {
             try {
                 idleTimeout = Integer.parseInt(idleTimeoutString);
